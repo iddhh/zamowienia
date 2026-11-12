@@ -1,9 +1,6 @@
 target/
 .idea/
 .mvn/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 .kotlin
 
 ### IntelliJ IDEA ###
@@ -19,7 +16,7 @@ target/
 .apt_generated
 .classpath
 .factorypath
-.project
+.project	
 .settings
 .springBeans
 .sts4-cache
