@@ -1,0 +1,24 @@
+{
+  "imie": "Jan",
+  "nazwisko": "Kowal",
+  "email": "jankowal555@gmail.com",
+  "numerTelefonu": "739662098",
+  "produkty" : [
+    {
+      "kodProduktu": 677,
+      "ilosc": 20,
+      "jednostkaMiary": "l"
+    },
+    {
+      "kodProduktu": 212,
+      "ilosc": 5,
+      "jednostkaMiary": "l"
+    },
+    {
+      "kodProduktu": 386,
+      "ilosc": 25,
+      "jednostkaMiary": "kg"
+    }
+  ]
+}
+

@@ -1,0 +1,7 @@
+services:
+  aplikacja-zamowienia:
+    image: obsluga-zamowien:1
+    container_name: kontener-obsluga-zamowien
+    volumes:
+      - ./zamowienia:/app/requests
+    restart: always

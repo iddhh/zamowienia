@@ -1,0 +1,24 @@
+{
+  "imie": "Monika",
+  "nazwisko": "Nowak",
+  "email": "monikanowak123@gmail.com",
+  "numerTelefonu": "472689456",
+  "produkty" : [
+    {
+      "kodProduktu": 234,
+      "ilosc": 2,
+      "jednostkaMiary": "kg"
+    },
+    {
+      "kodProduktu": 456,
+      "ilosc": 30,
+      "jednostkaMiary": "kg"
+    },
+    {
+      "kodProduktu": 767,
+      "ilosc": 9,
+      "jednostkaMiary": "t"
+    }
+  ]
+}
+
