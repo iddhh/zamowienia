@@ -1,0 +1,16 @@
+name: "gitea"
+services:
+  gitea:
+    image: "docker.gitea.com/gitea:28.2.0-rootless"
+    container_name: "gitea"
+    ports:
+      - "3000:3000"
+      - "2222:2222"
+    volumes:
+      - gitea-data:/var/lib/gitea
+      - gitea-config:/etc/gitea
+    restart: unless-stopped
+
+volumes:
+  gitea-data:
+  gitea-config:

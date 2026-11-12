@@ -1,5 +1,6 @@
 package org.zamowienia;
 
+import io.github.cdimascio.dotenv.Dotenv;
 import org.apache.commons.configuration2.Configuration;
 import org.apache.commons.configuration2.FileBasedConfiguration;
 import org.apache.commons.configuration2.PropertiesConfiguration;
@@ -13,7 +14,17 @@ public class LoadSettings {
             new FileBasedConfigurationBuilder<FileBasedConfiguration>(PropertiesConfiguration.class)
                     .configure(params.properties()
                             .setFileName("app.settings.properties"));
-    public String Directory(){
+    public String Directory() {
+        Dotenv dotenv = Dotenv.configure()
+                .ignoreIfMissing()
+                .ignoreIfMalformed()
+                .load();
+
+        String envDirectory = dotenv.get("FILE_DIRECTORY");
+        if (envDirectory != null && !envDirectory.isBlank()) {
+            return envDirectory.trim();
+        }
+
         try {
             Configuration config = builder.getConfiguration();
             return config.getString("file.directory");
