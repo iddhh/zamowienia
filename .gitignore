@@ -2,6 +2,8 @@ target/
 .idea/
 .mvn/
 .kotlin
+data/
+config/
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
